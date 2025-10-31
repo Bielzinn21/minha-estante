@@ -1,0 +1,30 @@
+/* Header transparente e efeito ao scroll */
+#mainNavbar {
+    background-color: rgba(255, 255, 255, 0.8); /* quase transparente */
+    backdrop-filter: blur(12px); /* efeito blur suave */
+    transition: all 0.4s ease;
+    border-bottom: 1px solid rgba(200, 200, 200, 0.3);
+    font-family: 'Poppins', sans-serif;
+}
+
+#mainNavbar.scrolled {
+    background-color: #ffffff; /* sólido ao scroll */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 0.5rem 1rem;
+}
+
+/* Botão principal */
+#mainNavbar .btn-primary {
+    background-color: #c7b3e0; /* lilás suave */
+    border-color: #c7b3e0;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+#mainNavbar .btn-primary:hover {
+    background-color: #b29dcb; /* lilás mais escuro */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
